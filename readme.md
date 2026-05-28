@@ -97,14 +97,24 @@ curl http://127.0.0.1:5000/sensor/history
 
 Response:
 ```json
-[{"temp": 22.5}]
+[{"timestamp": "2026-07-18 09:00:00", "temp": 22.5}]
 ```
-
+ 
+### `GET /sensor/plot`
+Returns a PNG chart of temperature over time, rendered from all data received in the current session. Open directly in the browser.
+ 
+```
+http://127.0.0.1:5000/sensor/plot
+```
+ 
+Returns a `404` with a plain text message if no data has been posted yet.
+ 
 > Data is stored in memory and resets every time the server restarts.
-
+ 
 ---
-
+ 
 ## Requirements
-
+ 
 - Python 3.7+
 - Flask
+- Matplotlib

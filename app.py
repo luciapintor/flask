@@ -2,6 +2,11 @@ from flask import Flask, request, jsonify
 from datetime import datetime
 import json
 
+import matplotlib
+matplotlib.use('Agg')  # non-interactive backend, no display needed
+import matplotlib.pyplot as plt
+import io
+
 app = Flask(__name__)
 
 # Check if the sensor data file exists, if not create it with an empty list
@@ -45,6 +50,30 @@ def receive():
 @app.route('/sensor/history')
 def history():
     return jsonify(sensor_data)
+
+@app.route('/sensor/plot')
+def plot():
+    if not sensor_data:
+        return "No data available yet.", 404
+
+    timestamps = [entry["timestamp"] for entry in sensor_data]
+    temperatures = [entry["temp"] for entry in sensor_data]
+
+    fig, ax = plt.subplots(figsize=(10, 4))
+    ax.plot(timestamps, temperatures, marker='o', color='steelblue', linewidth=2)
+    ax.set_title("Temperature over Time")
+    ax.set_xlabel("Timestamp")
+    ax.set_ylabel("Temperature (°C)")
+    ax.tick_params(axis='x', rotation=45)
+    plt.tight_layout()
+
+    buf = io.BytesIO()
+    plt.savefig(buf, format='png')
+    plt.close(fig)
+    buf.seek(0)
+
+    from flask import send_file
+    return send_file(buf, mimetype='image/png')
 
 if __name__ == '__main__':
     app.run(debug=True)
