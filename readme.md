@@ -7,7 +7,11 @@ A minimal Flask application that demonstrates how to use your PC as a local HTTP
 ```
 flask_demo/
 ├── app.py
+└── readme.md
 └── requirements.txt
+└── database
+    └── room.json
+    └── sensor_data.json
 ```
 
 ## Setup
@@ -54,6 +58,7 @@ Response:
     "posts": 10,
     "avg_likes": 120
   },
+  ...
 ```
 
 ### `POST /sensor`
@@ -84,7 +89,7 @@ Response:
 ```
 
 ### `GET /sensor/history`
-Returns all data received in the current session.
+Returns all data received with POST requests.
 
 ```bash
 curl http://127.0.0.1:5000/sensor/history
