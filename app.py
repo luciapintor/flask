@@ -4,8 +4,14 @@ import json
 
 app = Flask(__name__)
 
-# In-memory storage for received sensor data
-sensor_data = []
+# Check if the sensor data file exists, if not create it with an empty list
+try:
+    with open('database/sensor_data.json', 'r') as f:
+        sensor_data = json.load(f)
+except FileNotFoundError:
+    with open('database/sensor_data.json', 'w') as f:
+        json.dump([], f)
+    sensor_data = []
 
 @app.route('/')
 def home():
@@ -31,7 +37,7 @@ def receive():
     print("Received:", payload)
     
     # Store the received data in memory for later retrieval
-    with open('database/sensor_data.json', 'a') as f:
+    with open('database/sensor_data.json', 'w') as f:
         json.dump(sensor_data, f, indent=4)
         
     return jsonify({"status": "ok", "total_records": len(sensor_data)})
