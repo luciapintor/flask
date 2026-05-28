@@ -1,0 +1,146 @@
+[
+  {
+    "time": "09:00",
+    "artwork": "Mona Lisa",
+    "visitors": 45,
+    "selfies": 18,
+    "posts": 10,
+    "avg_likes": 120
+  },
+  {
+    "time": "09:00",
+    "artwork": "The Starry Night",
+    "visitors": 30,
+    "selfies": 12,
+    "posts": 8,
+    "avg_likes": 95
+  },
+  {
+    "time": "09:00",
+    "artwork": "Napoleon Crossing the Alps",
+    "visitors": 20,
+    "selfies": 5,
+    "posts": 3,
+    "avg_likes": 60
+  },
+  {
+    "time": "10:00",
+    "artwork": "Mona Lisa",
+    "visitors": 60,
+    "selfies": 25,
+    "posts": 15,
+    "avg_likes": 180
+  },
+  {
+    "time": "10:00",
+    "artwork": "The Starry Night",
+    "visitors": 42,
+    "selfies": 18,
+    "posts": 12,
+    "avg_likes": 130
+  },
+  {
+    "time": "10:00",
+    "artwork": "Napoleon Crossing the Alps",
+    "visitors": 28,
+    "selfies": 7,
+    "posts": 5,
+    "avg_likes": 72
+  },
+  {
+    "time": "11:00",
+    "artwork": "Mona Lisa",
+    "visitors": 75,
+    "selfies": 32,
+    "posts": 20,
+    "avg_likes": 240
+  },
+  {
+    "time": "11:00",
+    "artwork": "The Starry Night",
+    "visitors": 55,
+    "selfies": 24,
+    "posts": 16,
+    "avg_likes": 170
+  },
+  {
+    "time": "11:00",
+    "artwork": "Napoleon Crossing the Alps",
+    "visitors": 35,
+    "selfies": 10,
+    "posts": 7,
+    "avg_likes": 90
+  },
+  {
+    "time": "12:00",
+    "artwork": "Mona Lisa",
+    "visitors": 90,
+    "selfies": 40,
+    "posts": 28,
+    "avg_likes": 310
+  },
+  {
+    "time": "12:00",
+    "artwork": "The Starry Night",
+    "visitors": 68,
+    "selfies": 30,
+    "posts": 20,
+    "avg_likes": 210
+  },
+  {
+    "time": "12:00",
+    "artwork": "Napoleon Crossing the Alps",
+    "visitors": 40,
+    "selfies": 12,
+    "posts": 9,
+    "avg_likes": 105
+  },
+  {
+    "time": "13:00",
+    "artwork": "Mona Lisa",
+    "visitors": 85,
+    "selfies": 38,
+    "posts": 25,
+    "avg_likes": 290
+  },
+  {
+    "time": "13:00",
+    "artwork": "The Starry Night",
+    "visitors": 70,
+    "selfies": 32,
+    "posts": 22,
+    "avg_likes": 230
+  },
+  {
+    "time": "13:00",
+    "artwork": "Napoleon Crossing the Alps",
+    "visitors": 45,
+    "selfies": 14,
+    "posts": 10,
+    "avg_likes": 120
+  },
+  {
+    "time": "14:00",
+    "artwork": "Mona Lisa",
+    "visitors": 65,
+    "selfies": 28,
+    "posts": 18,
+    "avg_likes": 200
+  },
+  {
+    "time": "14:00",
+    "artwork": "The Starry Night",
+    "visitors": 58,
+    "selfies": 25,
+    "posts": 17,
+    "avg_likes": 185
+  },
+  {
+    "time": "14:00",
+    "artwork": "Napoleon Crossing the Alps",
+    "visitors": 38,
+    "selfies": 11,
+    "posts": 8,
+    "avg_likes": 98
+  }
+]
